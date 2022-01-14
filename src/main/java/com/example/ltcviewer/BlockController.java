@@ -20,7 +20,7 @@ public class BlockController {
 
         for (int i = 0; blockCount - i > (blockCount - 5); ++i) {
             blocks[i] = restTemplate.getForObject(
-                "https://chain.so/api/v2/get_block/DOGE/" + (blockCount - i),
+                "https://chain.so/api/v2/get_block/LTC/" + (blockCount - i),
                 Block.class
             );
         }

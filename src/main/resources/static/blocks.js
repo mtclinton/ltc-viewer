@@ -6,6 +6,7 @@ fetch('/blocks')
 function renderBlocks(blocks) {
     for (block of blocks) {
         let el = document.createElement('tr');
+        console.log(block)
 
         let blockNumber = document.createElement('td');
         blockNumber.innerText = block.data.block_no;
