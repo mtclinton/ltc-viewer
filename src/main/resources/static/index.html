@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container mt-5">
+    <h3>Last 5 LTC nodes</h3>
+    <table class="table">
+        <thead>
+        <th>Block Number</th>
+        <th>Block Hash</th>
+        <th>Mining Difficulty</th>
+        <th>Confirmations</th>
+        </thead>
+        <tbody id="blocks">
+            <tr id="loader">
+                <td colspan="4">
+                    <div class="spinner-border" role="status"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="blocks.js"></script>
+</body>
+</html>
